@@ -1,8 +1,8 @@
 {
-  "name": "learned",
+  "name": "learnéd",
   "version": "1.0.0",
-  "description": "> Written with [StackEdit](https://stackedit.io/). # **Learnéd**",
-  "main": "index.js",
+  "description": "a more attractive interface for using Anki's Spaced Repetition System (SRS) made using React.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Tokuhisa1/learned.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Winston Tokuhisa",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Tokuhisa1/learned/issues"
