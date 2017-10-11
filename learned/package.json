@@ -1,5 +1,5 @@
 {
-  "name": "learnéd",
+  "name": "learned",
   "version": "1.0.0",
   "description": "a more attractive interface for using Anki's Spaced Repetition System (SRS) made using React.js",
   "main": "server.js",
