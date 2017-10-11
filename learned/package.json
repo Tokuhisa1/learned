@@ -4,7 +4,10 @@
   "description": "a more attractive interface for using Anki's Spaced Repetition System (SRS) made using React.js",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "debugger": "DEBUG=*:* npm run dev"
   },
   "repository": {
     "type": "git",
