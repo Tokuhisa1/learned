@@ -44,15 +44,15 @@ This schedule will be used to keep track of your progress throughout the week an
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day                             | Deliverable | Estimated Time | Actual |
-|:---------------------------------|:------| ---| |
-|Day 1: **Friday** (10/06/2017)    | Planning | | |
-|Day 2: **Saturday** (10/07/2017)  | [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html) | ---| |
-|Day 3: **Sunday** (10/08/2017)    | Outlining Database Schema | ---| |
-|Day 4: **Monday** (10/09/2017)    | Sanity Testing API ([MemJogger](http://memjogger.com/help/api)) | 5 hours | 2 hours |
-|Day 5: **Tuesday** (10/10/2017)   | Scope Revision | ---| |
-|Day 6: **Wednesday** (10/11/2017) | Express Backend | ---| |
-|--------------------------------- | Express Backend | ---| |
-|Day 7: **Thursday** (10/12/2017)  |  | ---| |
-|Day 8: **Friday** (10/13/2017)    |  | ---| |
-|Day 9: **Saturday**  (10/14/2017) | "Last Minute" Bug Fixing/CSS Styling | ---| |
-|Day 10: **Sunday** (10/15/2017)   | Finetuning Presentation | | |
+|:---------------------------------|:------------|---------------|--------|
+|Day 1: **Friday** (10/06/2017)    | Planning    |               |        |
+|Day 2: **Saturday** (10/07/2017)  | [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html) |           |        |
+|Day 3: **Sunday** (10/08/2017)    | Outlining Database Schema | |        |
+|Day 4: **Monday** (10/09/2017)    | Sanity Testing API ([MemJogger](http://memjogger.com/help/api))      | 5 hours      |2 hours |
+|Day 5: **Tuesday** (10/10/2017)   | Scope Revision |            |        |
+|Day 6: **Wednesday** (10/11/2017) | Express Backend |           |        |
+|                                  | Express Backend |           |        |
+|Day 7: **Thursday** (10/12/2017)  |                 |           |        |
+|Day 8: **Friday** (10/13/2017)    |   CSS Styling   |           |        |
+|Day 9: **Saturday** (10/14/2017) | "Last Minute" Bug Fixing |    |        |
+|Day 10: **Sunday** (10/15/2017)   | Finetuning Presentation |   |        |
