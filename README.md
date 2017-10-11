@@ -50,12 +50,11 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Day 3: **Sunday** (10/08/2017)    | Outlining Database Schema | |        |
 |Day 4: **Monday** (10/09/2017)    | Sanity Testing API ([MemJogger](http://memjogger.com/help/api))      | 5 hours      |2 hours |
 |Day 5: **Tuesday** (10/10/2017)   | Scope Revision |            |        |
-|Day 6: **Wednesday** (10/11/2017) | Express Backend |           |        |
-|                                  | Sanity Testing "API" ([Anki Connect](https://github.com/FooSoft/anki-connect)) | 1 hour              |        |
-|                                  | Configure Node Server | 2 hours |        |
+|Day 6: **Wednesday** (10/11/2017) | Sanity Testing "API" ([Anki Connect](https://github.com/FooSoft/anki-connect)) | 1 hour              |        |
+| Express Back-End                  | Configure Node Server | 2 hours |        |
 |                                  | Logic for API | 3 hours |        |
-|Day 7: **Thursday** (10/12/2017)  | React Front-End |           |        |
-|                                  | Build Components | 2 hours |        |
+|Day 7: **Thursday** (10/12/2017)  | Build Components | 3 hours |        |
+| React Front-End                  | Construct Views | 2 hours |        |
 |Day 8: **Friday** (10/13/2017)    |   CSS Styling   | 6 hours      |        |
 |Day 9: **Saturday** (10/14/2017) | "Last Minute" Bug Fixing |    |        |
 |Day 10: **Sunday** (10/15/2017)   | Finetuning Presentation |   |        |
