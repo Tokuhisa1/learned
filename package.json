@@ -1,0 +1,20 @@
+{
+  "name": "learned",
+  "version": "1.0.0",
+  "description": "> Written with [StackEdit](https://stackedit.io/). # **Learnéd**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tokuhisa1/learned.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tokuhisa1/learned/issues"
+  },
+  "homepage": "https://github.com/Tokuhisa1/learned#readme"
+}
