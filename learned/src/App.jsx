@@ -14,20 +14,20 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        {/* <Header />
 
         <main id="background">
           <Switch>
             <Route path="/decks/:id/cards/:id" component={Card} />
             <Route path="/decks/:id" component={Deck} />
-            <Route path="/decks" component={DeckList} />
+            <Route path="/decks" component={DeckList} /> */}
             <Route exact path="/" component={Home} />
 
-            <Redirect to="/" />
+            {/* <Redirect to="/" />
           </Switch>
         </main>
 
-        <Footer />
+        <Footer /> */}
       </div>
     );
   }
