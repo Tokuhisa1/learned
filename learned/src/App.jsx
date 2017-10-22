@@ -14,9 +14,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Header />
+        <Header />
 
-        <main id="background">
+        {/* <main id="background">
           <Switch>
             <Route path="/decks/:id/cards/:id" component={Card} />
             <Route path="/decks/:id" component={Deck} />
@@ -25,9 +25,9 @@ class App extends Component {
 
             {/* <Redirect to="/" />
           </Switch>
-        </main>
+        </main> */}
 
-        <Footer /> */}
+        <Footer />
       </div>
     );
   }
