@@ -19,8 +19,8 @@ class App extends Component {
         {/* <main id="background">
           <Switch>
             <Route path="/decks/:id/cards/:id" component={Card} />
-            <Route path="/decks/:id" component={Deck} />
-            <Route path="/decks" component={DeckList} /> */}
+            <Route path="/decks/:id" component={Deck} /> */}
+            <Route path="/decks" component={DeckList} />
             <Route exact path="/" component={Home} />
 
             {/* <Redirect to="/" />

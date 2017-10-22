@@ -2,6 +2,10 @@
   background-color: #000;
 }
 
+.header li, .footer, #deck-list {
+  text-align: center;
+}
+
 .footer {
   color: white;
 }
