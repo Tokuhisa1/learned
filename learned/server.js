@@ -17,3 +17,8 @@ app.listen(port, () => {
 app.get('/', (req, res) => {
   res.send('Hello world!');
 });
+
+// Returns an error if route undefined
+app.use('*', (req, res) => {
+  res.status(404).send(err);
+})
