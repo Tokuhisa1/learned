@@ -5,7 +5,7 @@ class Deck extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      id: this.props.match.params.id,
+      id: this.props.deck.id,
       apiData: null,
       apiDataLoaded: false,
     };
@@ -26,7 +26,6 @@ class Deck extends Component {
   showDeckOnPage() {
     return (
       <div className="deck">
-        {console.log(this.state.apiData.name)}
         {this.state.apiData.name}
       </div>
     );
