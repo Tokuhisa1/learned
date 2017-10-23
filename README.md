@@ -19,6 +19,23 @@ I intend to build a Spaced Repetition System(SRS)/&ldquo;smart&rdquo; flashcard 
 ## Time-Priority Matrix <a id="matrix"></a>
 ![Time-Priority Matrix](https://github.com/Tokuhisa1/learned/blob/rails/assets/IMG_6018.JPG?raw=true)
 
+## MVP
+- Read a list of existing decks
+
+- Create a new deck
+- Update a pre-existing deck
+- Delete a pre-existing deck
+- Show data about a deck
+
+- Review an individual card
+- Create a new card
+- Update a pre-existing card
+- Delete a pre-existing card
+
+## Post-MVP
+- Better CORS solution
+- Authentication
+
 ## Wireframes <a id="wireframes"></a>
 **Index Page**
 ![Index Page](https://github.com/Tokuhisa1/learned/blob/rails/assets/wireframes/IMG_6020.JPG?raw=true)
@@ -34,8 +51,8 @@ I intend to build a Spaced Repetition System(SRS)/&ldquo;smart&rdquo; flashcard 
  - CSS
  
  **Back-End:**
- - Express
- - Anki + Anki Connect
+ - Rails
+ - Memjogger API
 
 ## Project Schedule <a id="schedule"></a>
 
