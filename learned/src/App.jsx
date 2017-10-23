@@ -16,16 +16,16 @@ class App extends Component {
       <div className="App">
         <Header />
 
-        {/* <main id="background">
+        <main id="background">
           <Switch>
             <Route path="/decks/:id/cards/:id" component={Card} />
-            <Route path="/decks/:id" component={Deck} /> */}
+            <Route path="/decks/:id" component={Deck} />
             <Route path="/decks" component={DeckList} />
             <Route exact path="/" component={Home} />
 
-            {/* <Redirect to="/" />
+            <Redirect to="/" />
           </Switch>
-        </main> */}
+        </main>
 
         <Footer />
       </div>
