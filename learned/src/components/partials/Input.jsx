@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class Input extends Component {
   render() {
+    // How did I clear the input after I submit?
     return (
       <form
         onSubmit={this.props.handleSubmit}
