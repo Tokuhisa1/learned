@@ -27,6 +27,7 @@ class Deck extends Component {
     return (
       <div className="deck">
         {this.state.apiData.name}
+        <button className="deckButton" onClick={() => {this.props.handleDelete(this.state.id)}} id="deckDelete">Delete</button>
       </div>
     );
   }
