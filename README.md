@@ -100,3 +100,18 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |                                    | Card Review Functionality           | 2 hours |         |
 |                                    | Devise Authentication               | 2 hours |         |
 | Day 20: **Wednesday** (10/25/2017) | CSS Styling/Finetuning Presentation | 3 hours |         |
+
+| Day                                | Deliverable | Estimated Time | Invested | Actual  |
+|:-----------------------------------|:------------|---------------|---------|------ |
+| Day 1: **Sunday** (10/22/2017)    | Show Deck List Functionality        | 2 hours | | 3 hours |
+| Day 2: **Monday** (10/23/2017)    | Scope Outline                       | 1 hour  | | 1 hour |
+| React Front-End/Deck Logic        | Deck Update Functionality           | 1 hour  |         | |
+|                                   | Deck Creation Functionality         | 2 hour  | 5 hours | |
+|                                   | Deck Review Functionality           | 2 hours |         | |
+|                                   | Deck Deletion Functionality         | 2 hours |         | |
+| Day 3: **Tuesday** (10/24/2017)   | Card Creation Functionality         | 1 hour  |         | |
+| Card Logic/Rails Back-End         | Card Update Functionality           | 1 hour  |         | |
+|                                   | Card Deletion Functionality         | 1 hour  |         | |
+|                                   | Card Review Functionality           | 2 hours |         | |
+|                                   | Devise Authentication               | 2 hours |         | |
+| Day 4: **Wednesday** (10/25/2017) | CSS Styling/Finetuning Presentation | 3 hours |         | |
