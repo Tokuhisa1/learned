@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
-import Card from './Card';
 
+class Review extends Component {
   componentDidMount() {
     // console.log(this.state.id);
     Axios.get(`http://memjogger.com/api/cardset/${this.state.id}?token=6dce93485a8fb619c6536793db63d60c`)
@@ -13,3 +13,6 @@ import Card from './Card';
       });
     });
   }
+}
+
+export default Review;
