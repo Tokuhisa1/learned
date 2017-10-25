@@ -11,6 +11,7 @@ class Deck extends Component {
       inputValue: this.props.deck.name,
     };
     this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(event) {
@@ -22,11 +23,12 @@ class Deck extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    Axios.post('http://memjogger.com/api/cardset?token=6dce93485a8fb619c6536793db63d60c',
-      JSON.stringify({"name": `${this.state.inputValue}`}), )
+    // console.log(this.state.id);
+    Axios.put(`http://memjogger.com/api/cardset/${this.state.id}?token=6dce93485a8fb619c6536793db63d60c`,
+      JSON.stringify({"name": `${this.state.inputValue}`}))
     .then(res => {
       if (res.status === 200) {
-        Axios.get('http://memjogger.com/api/cardset?token=6dce93485a8fb619c6536793db63d60c')
+        Axios.get(`http://memjogger.com/api/cardset/${this.state.id}?token=6dce93485a8fb619c6536793db63d60c`)
         .then(res => {
           this.setState(prevState => {
             return { inputValue: this.props.deck.name };

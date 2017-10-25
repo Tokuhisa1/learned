@@ -47,7 +47,7 @@ class DeckList extends Component {
   handleSubmit(e) {
     e.preventDefault();
     Axios.post('http://memjogger.com/api/cardset?token=6dce93485a8fb619c6536793db63d60c',
-      JSON.stringify({"name": `${this.state.inputValue}`}), )
+      JSON.stringify({"name": `${this.state.inputValue}`}))
     .then(res => {
       if (res.status === 200) {
         Axios.get('http://memjogger.com/api/cardset?token=6dce93485a8fb619c6536793db63d60c')
@@ -64,13 +64,14 @@ class DeckList extends Component {
   }
 
   handleDelete(id) {
+    // console.log(id);
     Axios.delete(`http://memjogger.com/api/cardset/${id}?token=6dce93485a8fb619c6536793db63d60c`)
     .then(res => {
       console.log(res);
-    })
+    });
   }
 
-  showDecksOnPage() {
+  showDecks() {
     return this.state.apiData.map((deck, index) => {
       return <Deck deck={deck} key={index}
               handleDelete={this.handleDelete} />;
@@ -86,8 +87,8 @@ class DeckList extends Component {
           handleSubmit={this.handleSubmit}
         />
         <div id="deck-list">
-          {this.state.apiDataLoaded ? this.showDecksOnPage()
-                                      : <p>Loading. . .</p>}
+          {this.state.apiDataLoaded ? this.showDecks()
+                                    : <p>Loading. . .</p>}
         </div>
       </div>
     );

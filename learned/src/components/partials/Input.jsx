@@ -7,7 +7,6 @@ class Input extends Component {
         onSubmit={this.props.handleSubmit}
       >
         <input
-          id="addDeck"
           value={this.props.inputValue}
           text="text"
           name="deck"

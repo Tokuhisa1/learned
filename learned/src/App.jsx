@@ -7,7 +7,7 @@ import Footer from './components/partials/Footer';
 import { Route, Redirect, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import DeckList from './components/DeckList';
-import Deck from './components/Deck';
+import Review from './components/Review';
 import Card from './components/Card';
 
 class App extends Component {
@@ -19,7 +19,7 @@ class App extends Component {
         <main id="background">
           <Switch>
             <Route path="/decks/:id/cards/:id" component={Card} />
-            <Route path="/decks/:id" component={Deck} />
+            <Route path="/decks/:id" component={Review} />
             <Route path="/decks" component={DeckList} />
             <Route exact path="/" component={Home} />
 
