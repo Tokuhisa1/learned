@@ -60,7 +60,7 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-[Google Calendar](https://calendar.google.com/calendar/embed?src=tokuhisawinston%40gmail.com&ctz=America/New_York)
+[Google Calendar](https://calendar.google.com/calendar/embed?src=eqajjnhdereic6on6pnl577i50%40group.calendar.google.com&ctz=America/New_York)
 
 | Day                                | Deliverable | Estimated Time | Invested | Actual  |
 |:-----------------------------------|:------------|---------------|---------|------ |
