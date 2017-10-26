@@ -25,6 +25,9 @@ gem 'puma', '~> 3.7'
 # Use HTTParty for AJAX requests
 gem 'httparty', '~> 0.15.6'
 
+# Use Foreman to manage multiple servers
+gem 'foreman'
+
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
