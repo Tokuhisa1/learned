@@ -60,6 +60,8 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
+[Google Calendar](https://calendar.google.com/calendar/embed?src=tokuhisawinston%40gmail.com&ctz=America/New_York)
+
 | Day                                | Deliverable | Estimated Time | Invested | Actual  |
 |:-----------------------------------|:------------|---------------|---------|------ |
 | Day 1: **Sunday** (10/22/2017)    | Show Deck List Functionality        | 2 hours | | 3 hours |
