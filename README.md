@@ -19,6 +19,23 @@ I intend to build a Spaced Repetition System(SRS)/&ldquo;smart&rdquo; flashcard 
 ## Time-Priority Matrix <a id="matrix"></a>
 ![Time-Priority Matrix](https://github.com/Tokuhisa1/learned/blob/rails/assets/IMG_6018.JPG?raw=true)
 
+## MVP
+- Read a list of existing decks
+
+- Create a new deck
+- Update a pre-existing deck
+- Delete a pre-existing deck
+- Show data about a deck
+
+- Review an individual card
+- Create a new card
+- Update a pre-existing card
+- Delete a pre-existing card
+
+## Post-MVP
+- Better CORS solution
+- Authentication
+
 ## Wireframes <a id="wireframes"></a>
 **Index Page**
 ![Index Page](https://github.com/Tokuhisa1/learned/blob/rails/assets/wireframes/IMG_6020.JPG?raw=true)
@@ -34,8 +51,8 @@ I intend to build a Spaced Repetition System(SRS)/&ldquo;smart&rdquo; flashcard 
  - CSS
  
  **Back-End:**
- - Express
- - Anki + Anki Connect
+ - Rails
+ - Memjogger API
 
 ## Project Schedule <a id="schedule"></a>
 
@@ -43,18 +60,24 @@ This schedule will be used to keep track of your progress throughout the week an
 
 You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
-|  Day                             | Deliverable | Estimated Time | Actual |
-|:---------------------------------|:------------|---------------|--------|
-|Day 1: **Friday** (10/06/2017)    | Planning    |               |        |
-|Day 2: **Saturday** (10/07/2017)  | [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html) |           |        |
-|Day 3: **Sunday** (10/08/2017)    | Outlining Database Schema | |        |
-|Day 4: **Monday** (10/09/2017)    | Sanity Testing API ([MemJogger](http://memjogger.com/help/api))      | 5 hours      |2 hours |
-|Day 5: **Tuesday** (10/10/2017)   | Scope Revision |            |        |
-|Day 6: **Wednesday** (10/11/2017) | Sanity Testing "API" ([Anki Connect](https://github.com/FooSoft/anki-connect)) | 1 hour              |        |
-| Express Back-End                  | Configure Node Server | 2 hours |        |
-|                                  | Logic for API | 3 hours |        |
-|Day 7: **Thursday** (10/12/2017)  | Build Components | 3 hours |        |
-| React Front-End                  | Construct Views | 2 hours |        |
-|Day 8: **Friday** (10/13/2017)    |   CSS Styling   | 6 hours      |        |
-|Day 9: **Saturday** (10/14/2017) | "Last Minute" Bug Fixing |    |        |
-|Day 10: **Sunday** (10/15/2017)   | Finetuning Presentation |   |        |
+[Google Calendar](https://calendar.google.com/calendar/embed?src=eqajjnhdereic6on6pnl577i50%40group.calendar.google.com&ctz=America/New_York)
+
+| Day                                | Deliverable | Estimated Time | Invested | Actual  |
+|:-----------------------------------|:------------|---------------|---------|------ |
+| Day 1: **Sunday** (10/22/2017)    | Show Deck List Functionality        | 2 hours | | 3 hours |
+| Day 2: **Monday** (10/23/2017)    | Scope Outline                       | 1 hour  | | 1 hour |
+|                                   | Deck Creation Functionality         | 2 hours | 5 hours | |
+| Day 3: **Tuesday** (10/24/2017)   | Deck Creation Functionality         | 2 hours | | 10 hours |
+| React Front-End/Deck Logic        | Deck Deletion Functionality         | 2 hours | 0.5 hours | |
+|                                   | Deck Update Functionality           | 2 hours | 1 hour  | |
+|                                   | Deck Review Functionality           | 2 hours | 1 hour  | |
+| Day 4: **Wednesday** (10/25/2017) | Deck Review Functionality           | 2 hours | 1 hour  | |
+|                                   | Research Rails API Calls            | 1 hour  | 1 hour  | |
+| Day 5: **Thursday** (10/25/2017)  | Rails Backend Setup                 | 1 hour  |         | |
+| Card Logic/Rails Back-End         | Card Creation Functionality         | 1 hour  |         | |
+|                                   | Deck/Card Update Functionality      | 1 hour  |         | |
+|                                   | Deck/Card Deletion Functionality    | 1 hour  |         | |
+|                                   | Card Review Functionality           | 2 hours |         | |
+| Day 6: **Friday** (10/25/2017)    | CSS Styling/Finetuning Presentation | 3 hours |         | |
+|                                   | Devise Authentication(?)            | 2 hours |         | |
+
