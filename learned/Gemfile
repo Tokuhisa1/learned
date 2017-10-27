@@ -25,6 +25,9 @@ gem 'puma', '~> 3.7'
 # Use HTTParty for AJAX requests
 gem 'httparty', '~> 0.15.6'
 
+# Use Figaro to hide token/"API key"
+gem 'figaro'
+
 # Use Foreman to manage multiple servers
 gem 'foreman'
 

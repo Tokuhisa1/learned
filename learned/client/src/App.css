@@ -1,9 +1,72 @@
+/* For the things that just don't want to cooperate:
+https://medium.com/@aghh1504/4-four-ways-to-style-react-components-ac6f323da822*/
+html, body {
+  font-family: 'Graduate', cursive;
+  background-color: #ebd5b3;
+  width: 100vw;
+}
+
 .header, .footer {
-  background-color: #000;
+  background-color: darkslategray;
+  color: white;
 }
 
 .header li, .footer, #deck-list {
   text-align: center;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbar li {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+div input {
+  margin: 0 auto;
+}
+
+#background {
+  background-image: url(./bg.jpg); /*no-repeat center center fixed;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#home, #background {
+  height: 1000px;
+}
+
+#home {
+  text-align: center;
+}
+
+#deck-list {
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+#inset {
+  display: inline-block;
+  background-color: #ebd5b3;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+li {
+  color: white;
+}
+
+div span {
+  color: black;
 }
 
 .footer {

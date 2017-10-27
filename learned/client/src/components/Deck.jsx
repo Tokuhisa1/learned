@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Axios from 'axios';
 import Input from './partials/Input';
 
+// import styled from 'styled-components';
+
 class Deck extends Component {
   constructor(props) {
     super(props);
@@ -51,7 +53,7 @@ class Deck extends Component {
     return (
       <div className="deck">
         <Link to={`/decks/${this.state.id}`} className="link">
-          {this.props.deck.name}
+          <span>{this.props.deck.name}</span>
         </Link>
         <button className="deckButton" id="deckEdit"
           onClick={() => { this.setState({ isBeingEdited: true }) }}

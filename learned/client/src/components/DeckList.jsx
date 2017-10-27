@@ -27,11 +27,11 @@ class DeckList extends Component {
   //   });
 
   componentDidMount() {
-    Axios.get('http://memjogger.com/api/cardset?token=6dce93485a8fb619c6536793db63d60c')
+    Axios.get('/decks')
     .then(res => {
-      console.log(res.data.card_sets);
+      console.log(res.data.decks_data.card_sets);
       this.setState({
-        apiData: res.data.card_sets,
+        apiData: res.data.decks_data.card_sets,
         apiDataLoaded: true,
       });
     });
@@ -46,15 +46,16 @@ class DeckList extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    Axios.post('http://memjogger.com/api/cardset?token=6dce93485a8fb619c6536793db63d60c',
-      JSON.stringify({"name": `${this.state.inputValue}`}))
+    Axios.post('http://memjogger.com/api/cardset/?token=6dce93485a8fb619c6536793db63d60c',
+       JSON.stringify({"name": `${this.state.inputValue}`}))
     .then(res => {
+      console.log(res);
       if (res.status === 200) {
-        Axios.get('http://memjogger.com/api/cardset?token=6dce93485a8fb619c6536793db63d60c')
+        Axios.get('/decks')
         .then(res => {
           this.setState(prevState => {
             return {
-              apiData: res.data.card_sets,
+              apiData: res.data.deck_data.card_sets,
               inputValue: ''
             };
           });
@@ -64,10 +65,17 @@ class DeckList extends Component {
   }
 
   handleDelete(id) {
-    // console.log(id);
-    Axios.delete(`http://memjogger.com/api/cardset/${id}?token=6dce93485a8fb619c6536793db63d60c`)
+    console.log(id);
+    Axios.delete(`/decks/${id}`)
     .then(res => {
-      console.log(res);
+      if (res.status === 200) {
+        Axios.get('http://localhost:3001/decks')
+        .then(res => {
+          this.setState(prevState => {
+            return { apiData: res.data.decks_data.card_sets, };
+          });
+        });
+      }
     });
   }
 
@@ -80,15 +88,17 @@ class DeckList extends Component {
 
   render() {
     return (
-      <div>
-        <Input id='input'
-          inputValue={this.state.inputValue}
-          handleChange={this.handleChange}
-          handleSubmit={this.handleSubmit}
-        />
-        <div id="deck-list">
-          {this.state.apiDataLoaded ? this.showDecks()
-                                    : <p>Loading. . .</p>}
+      <div id="background">
+        <div id="inset">
+          <Input id='input'
+            inputValue={this.state.inputValue}
+            handleChange={this.handleChange}
+            handleSubmit={this.handleSubmit}
+          />
+          <div id="deck-list">
+            {this.state.apiDataLoaded ? this.showDecks()
+                                      : <p>Loading. . .</p>}
+          </div>
         </div>
       </div>
     );

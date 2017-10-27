@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <p className="home">This is the Home page.</p>
+    <div id="home">Welcome to Learnéd!</div>
   );
 };
 
