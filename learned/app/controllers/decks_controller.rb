@@ -7,9 +7,9 @@ class DecksController < ApplicationController
   end
 
   def create
-    # puts params
-    # new_deck = HTTParty.post('http://memjogger.com/api/cardset?token=6dce93485a8fb619c6536793db63d60c')
-    # render json: { message: "ok", new_data: new_deck }
+    new_deck = HTTParty.post('http://memjogger.com/api/cardset?token=6dce93485a8fb619c6536793db63d60c',
+      :body => { :name => params[:name] }.to_json)
+    render json: { message: "ok", new_data: new_deck }
   end
 
   def show
@@ -19,9 +19,12 @@ class DecksController < ApplicationController
   end
 
   def update
+    revision = HTTParty.put("http://memjogger.com/api/cardset/#{params[:id]}?token=6dce93485a8fb619c6536793db63d60c",
+      :body => { :name => params[:name] }.to_json)
+    render json: { message: "ok", new_data: revision }
   end
 
   def destroy
-    deleted = HTTParty.delete("http://memjogger.com/api/cardset/#{params[:id]}?token=6dce93485a8fb619c6536793db63d60c")
+    HTTParty.delete("http://memjogger.com/api/cardset/#{params[:id]}?token=6dce93485a8fb619c6536793db63d60c")
   end
 end

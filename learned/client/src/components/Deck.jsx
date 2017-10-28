@@ -27,14 +27,17 @@ class Deck extends Component {
   handleSubmit(e) {
     e.preventDefault();
     // console.log(this.state.id);
-    Axios.put(`http://memjogger.com/api/cardset/${this.state.id}?token=6dce93485a8fb619c6536793db63d60c`,
-      JSON.stringify({"name": `${this.state.inputValue}`}))
+    Axios.put(`/decks/${this.state.id}`,
+      { name: `${this.state.inputValue}` })
     .then(res => {
       if (res.status === 200) {
-        Axios.get(`http://memjogger.com/api/cardset/${this.state.id}?token=6dce93485a8fb619c6536793db63d60c`)
+        Axios.get(`/decks/${this.state.id}`)
         .then(res => {
           this.setState(prevState => {
-            return { inputValue: this.props.deck.name };
+            return {
+              // isBeingEdited: false,
+              inputValue: this.state.inputValue
+            };
           });
         });
       }

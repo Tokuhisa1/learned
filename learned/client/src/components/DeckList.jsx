@@ -46,16 +46,17 @@ class DeckList extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    Axios.post('http://memjogger.com/api/cardset/?token=6dce93485a8fb619c6536793db63d60c',
-       JSON.stringify({"name": `${this.state.inputValue}`}))
+    console.log(`This is the input value: ${this.state.inputValue}`);
+    Axios.post('/decks',
+       { name: `${this.state.inputValue}` })
     .then(res => {
-      console.log(res);
+      console.log(res.data.new_data);
       if (res.status === 200) {
         Axios.get('/decks')
         .then(res => {
           this.setState(prevState => {
             return {
-              apiData: res.data.deck_data.card_sets,
+              apiData: res.data.decks_data.card_sets,
               inputValue: ''
             };
           });
@@ -69,7 +70,7 @@ class DeckList extends Component {
     Axios.delete(`/decks/${id}`)
     .then(res => {
       if (res.status === 200) {
-        Axios.get('http://localhost:3001/decks')
+        Axios.get('/decks')
         .then(res => {
           this.setState(prevState => {
             return { apiData: res.data.decks_data.card_sets, };

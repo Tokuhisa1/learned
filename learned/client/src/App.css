@@ -28,6 +28,14 @@ html, body {
   text-decoration: none;
 }
 
+nav ul li .link {
+  color: white;
+}
+
+header .link {
+  color: white;
+}
+
 div input {
   margin: 0 auto;
 }
@@ -46,6 +54,7 @@ div input {
 
 #home {
   text-align: center;
+  color: yellow;
 }
 
 #deck-list {
@@ -67,6 +76,14 @@ li {
 
 div span {
   color: black;
+}
+
+#question {
+  color: blue;
+}
+
+#answer {
+  color: red;
 }
 
 .footer {

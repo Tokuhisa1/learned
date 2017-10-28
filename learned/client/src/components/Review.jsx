@@ -28,7 +28,7 @@ class Review extends Component {
 
   showDeck() {
     console.log(this.state.apiData, this.state.cards);
-    return <div><Link to={`/decks/${this.state.id}/cards/${this.state.cards[0].id}`} className="link">{this.state.apiData.name}</Link></div>;
+    return <div><Link to={`/decks/${this.state.id}/cards/${this.state.cards[0].id}`} className="link" apple={this.state.id}>{this.state.apiData.name}</Link></div>;
   }
 
   render() {
