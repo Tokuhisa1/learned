@@ -18,5 +18,5 @@
     "eject": "react-scripts eject",
     "deploy": "cp -a ./build/. ../public/"
   },
-  "proxy": "http://localhost:3001/"
+  "proxy": "https://learned-srs.herokuapp.com/"
 }
