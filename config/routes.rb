@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   end
 
   get '/cards/:id', to: 'cards#show'
+
+  root to: "root#index"
 end
